@@ -44,3 +44,11 @@ if parser.parse
   puts parser.result
 end
 ```
+
+## Ideas
+
+1. Look at [more kpeg
+   examples](https://github.com/evanphx/kpeg/tree/master/examples).
+1. Add other operations like multiplication.
+1. Add parentheses.
+1. Add variables like `a = 1`.
