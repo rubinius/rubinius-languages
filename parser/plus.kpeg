@@ -1,0 +1,15 @@
+# plus.kpeg
+%% name = Plus
+
+%% {
+  attr_accessor :result
+}
+
+ws = /[ \t\n]+/
+
+number = < /[0-9]*/ > { text.to_i }
+
+expr = expr:e1 ws "+" ws expr:e2 { e1 + e2 }
+     | number
+
+root = expr:e { @result = e }
